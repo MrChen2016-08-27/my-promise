@@ -1,0 +1,21 @@
+{
+  "name": "my-promise",
+  "version": "1.0.0",
+  "description": "promise 是 es6 的新特性，为异步编程的弊端(回调地狱，无法链式调用等)提供了解决方案",
+  "scripts": {
+    "dev": "webpack-dev-server --inline",
+    "karma-run": "karma run",
+    "karma-start": "karma start test/unit/karma.conf.js",
+    "karma-single": "karma start test/unit/karma.conf.js --single-run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
