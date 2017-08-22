@@ -7,6 +7,6 @@ describe('achieve promise test', function (){
 		iPr.then(function(value){
 			done();
 			expect(value).toBe(12);
-		});
+		})
 	});
 });
