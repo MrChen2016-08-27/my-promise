@@ -9,4 +9,18 @@ describe('achieve promise test', function (){
 			expect(value).toBe(12);
 		})
 	});
+
+	it('test promise then chain', function(done){
+		let iPro = new iPromise((reslove) => {
+			let y = 1;
+			reslove(y);
+		});
+		iPro.then(function(value){
+			done();
+			return value * 2;
+		}).then(function(value){
+			done();
+			return value;
+		});
+	});
 });
